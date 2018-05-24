@@ -1,0 +1,83 @@
+html, body, main {
+	margin: 0;
+	padding: 0;
+}
+
+div.menu {
+	position: fixed;
+	width: 250px;
+	height: 100%;
+	padding: 60px 0 0 60px;
+	z-index: 1;
+	background-color: white;
+}
+
+#name {
+	width: 150px;
+	margin-bottom: 40px;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+#nav {
+	padding: 0;
+}
+
+#category {
+	line-height: 20px;
+	font-size: 12px;
+
+}
+
+#nameTitle,
+#nameTitle:hover,
+#nameTitle:active {
+	text-decoration: none;
+	color: black;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: gray;
+	text-decoration: none;
+}
+a:active {
+	color: violet;
+}
+
+ul, li {
+	list-style-type: none;
+	font-family: sans-serif, Helvetica Neue;
+	font-size: 14px;
+	line-height: 30px;
+	margin: 0;
+}
+
+li {
+	font-weight: bold;
+
+}
+
+ul {
+	font-weight: 200;
+	padding: 0;
+}
+
+#copyright {
+	position: fixed;
+	bottom: 20px;
+	padding-left: 60px;
+	z-index: 2;
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+.home {
+	padding-top: 60px;
+}
+
+img {
+	width: 80%;
+}
