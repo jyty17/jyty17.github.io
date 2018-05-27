@@ -5,11 +5,13 @@ html, body, main {
 
 div.menu {
 	position: fixed;
+	top: 0;
+	left: 0;
 	width: 250px;
 	height: 100%;
 	padding: 60px 0 0 60px;
-	z-index: 1;
-	background-color: white;
+	background-color: none;
+	float: left;
 }
 
 #name {
@@ -26,7 +28,6 @@ div.menu {
 #category {
 	line-height: 20px;
 	font-size: 12px;
-
 }
 
 #nameTitle,
@@ -42,9 +43,10 @@ a {
 a:hover {
 	color: gray;
 	text-decoration: none;
+	cursor: pointer;
 }
 a:active {
-	color: violet;
+	color: #306021;
 }
 
 ul, li {
@@ -69,15 +71,70 @@ ul {
 	position: fixed;
 	bottom: 20px;
 	padding-left: 60px;
-	z-index: 2;
 	font-size: 12px;
 	font-weight: lighter;
 }
 
 .home {
 	padding-top: 60px;
+	overflow: hidden;
+	margin-left: 250px;
 }
 
 img {
 	width: 80%;
+
 }
+
+#floattext {
+	width: 80%;
+	height: 100%;
+	padding-top: 30px;
+	padding-left: 80px;
+	position: absolute;
+	z-index: 2;
+	transition: linear 2s;
+	animation: ease-in-out 2s;
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.words {
+  color: #444;
+  font-size: 0;
+}
+.words span {
+  font-size: 14px;
+  display: inline-block;
+  animation: move 5s ease-in-out infinite;
+}
+.words .words-2 {
+
+}
+
+.words .words-3
+
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.words span:nth-child(3) {
+  animation-delay: 1s;
+}
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.2;
+  }
+  50% {
+    /*text-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);*/
+    opacity: 1;
+  }
+  100% {
+    transform: translate(25px, 0);
+    opacity: 0;
+  }
+}
+
+

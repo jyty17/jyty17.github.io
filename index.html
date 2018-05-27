@@ -3,23 +3,34 @@
 <head>
 	<title>Jerry Yeh - Developer</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 	<main>
 		<div class="menu">
-			<div id="name"><a id="nameTitle"href="siteII.html">Jerry Yeh</a></div>
+			<div id="name"><a id="nameTitle"href="index.html">Jerry Yeh</a></div>
 			<ul id="nav">
 				<li>
 					Info
-					<ul><a href="">About</a></ul>
-					<ul><a href="">LinkedIn</a></ul>
-					<ul><a href="">Github</a></ul>
+					<ul><a onClick="myFunction();">About</a></ul>
+					<ul><a href="https://www.linkedin.com/in/tyj17/">LinkedIn</a></ul>
+					<ul><a href="https://github.com/jyty17">Github</a></ul>
 				</li>
 			</ul>
 		</div>
-		<div id="copyright">Copyright &copy; 2017</div>
+		<div id="copyright">Copyright &copy; 2018</div>
 		<div class="home">
-			<img src="Picture 1.jpg">
+			<div style="display: none;" id="floattext">
+			 <h1>I am...</h1>
+       <li>
+         <ul><div class="words"><span>creative</span></div></ul>
+          <ul><div class="words"><span>open minded</span></div></ul> 
+          <ul><div class="words"><span>determined</span></div></ul>
+        </li>
+        <p>My name is Jerry Yeh and I am a student studying <span style="text-decoration: bold;">Computer Engineering</span> at NYU. </p>
+			</div>
+			<img src="Picture 1.jpg"> 
 		</div>
 	</main>
 </body>
