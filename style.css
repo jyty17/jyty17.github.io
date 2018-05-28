@@ -125,10 +125,13 @@ img {
 @keyframes move {
   0% {
     transform: translate(0, 0);
-    opacity: 0.2;
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
   }
   50% {
-    /*text-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);*/
+    /*text-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);*/
     opacity: 1;
   }
   100% {
