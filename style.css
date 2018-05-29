@@ -94,8 +94,11 @@ img {
 	position: absolute;
 	z-index: 2;
 	transition: linear 2s;
-	animation: ease-in-out 2s;
 	background: rgba(255, 255, 255, 0.6);
+}
+
+#floattext p {
+  animation: move-stop 2s ease-in-out;
 }
 
 .words {
@@ -106,25 +109,24 @@ img {
   font-size: 14px;
   display: inline-block;
   animation: move 5s ease-in-out infinite;
+  word-spacing: 8px;
 }
-.words .words-2 {
-
-}
-
-.words .words-3
 
 .words span:nth-child(2) {
   animation-delay: 0.5s;
+  opacity: 0;
 }
 .words span:nth-child(3) {
   animation-delay: 1s;
+  opacity: 0;
 }
 .words span:nth-child(4) {
   animation-delay: 1.5s;
+  opacity: 0;
 }
 @keyframes move {
   0% {
-    transform: translate(0, 0);
+    transform: translate(-10px, 0);
     opacity: 0;
   }
   25% {
@@ -132,11 +134,27 @@ img {
   }
   50% {
     /*text-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);*/
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     transform: translate(25px, 0);
     opacity: 0;
+  }
+}
+@keyframes move-stop {
+  0% {
+    transform: translate(-30px, 0);
+    opacity: 0;
+    font-size: 0;
+  }
+  50% {
+    opacity: 1;
+    font-size: 1em;
+    transform: translate(5px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+    
   }
 }
 
