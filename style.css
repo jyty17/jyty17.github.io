@@ -87,10 +87,9 @@ img {
 }
 
 #floattext {
-	width: 80%;
+	width: 1144px;
 	height: 100%;
 	padding-top: 30px;
-	padding-left: 80px;
 	position: absolute;
 	z-index: 2;
 	transition: linear 2s;
@@ -99,21 +98,23 @@ img {
 
 #floattext p {
   animation: move-stop 2s ease-in-out;
+  margin-left: 50px;
 }
 
-#email-1 {
+.email-1 {
   text-decoration: underline;
 }
 
 .words {
   color: #444;
   font-size: 0;
+  text-align: center;
 }
 .words span {
   font-size: 14px;
   display: inline-block;
-  animation: move 3.5s ease-in-out infinite;
-  word-spacing: 8px;
+  animation: move 4s ease-in-out infinite;
+  word-spacing: 15px;
 }
 
 .words span:nth-child(2) {
@@ -121,11 +122,11 @@ img {
   opacity: 0;
 }
 .words span:nth-child(3) {
-  animation-delay: 1s;
+  animation-delay: 1.5s;
   opacity: 0;
 }
 .words span:nth-child(4) {
-  animation-delay: 1.5s;
+  animation-delay: 2.5s;
   opacity: 0;
 }
 @keyframes move {
@@ -133,13 +134,9 @@ img {
     transform: translate(-10px, 0);
     opacity: 0;
   }
-  25% {
+  50% {
     opacity: 1;
   }
-  /*50% {
-    text-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-    opacity: 0;
-  }*/
   100% {
     transform: translate(25px, 0);
     opacity: 0;
