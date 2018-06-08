@@ -101,6 +101,11 @@ img {
   margin-left: 50px;
 }
 
+#floattext .info-text {
+  width: 350px;
+  line-height: 2.5;
+}
+
 .email-1 {
   text-decoration: underline;
 }
