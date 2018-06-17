@@ -87,7 +87,8 @@ img {
 }
 
 #floattext {
-	width: 1144px;
+	/*width: 1144px;*/
+  width: 70%;
 	height: 100%;
 	padding-top: 30px;
 	position: absolute;
