@@ -1,2 +1,3 @@
 # jyty17.github.io
-My website. What else?
+
+Hi! Welcome to my website. 
