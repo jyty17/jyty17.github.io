@@ -65,7 +65,7 @@ div.container-hf {
 	width: 50%;
 }
 .container-info {
-	width: 25%;
+	min-width: 20%;
 	margin-right: 40px;
 	flex-basis: 25%;
 }
